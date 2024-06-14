@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__wrap">
+                <div class="col">
+                    <button class="header__burger">
+                        <svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2.04104 13.3333H19.8188C20.4299 13.3333 20.9299 12.8333 20.9299 12.2222C20.9299 11.6111 20.4299 11.1111 19.8188 11.1111H2.04104C1.42993 11.1111 0.929932 11.6111 0.929932 12.2222C0.929932 12.8333 1.42993 13.3333 2.04104 13.3333ZM2.04104 7.77778H19.8188C20.4299 7.77778 20.9299 7.27778 20.9299 6.66667C20.9299 6.05556 20.4299 5.55556 19.8188 5.55556H2.04104C1.42993 5.55556 0.929932 6.05556 0.929932 6.66667C0.929932 7.27778 1.42993 7.77778 2.04104 7.77778ZM0.929932 1.11111C0.929932 1.72222 1.42993 2.22222 2.04104 2.22222H19.8188C20.4299 2.22222 20.9299 1.72222 20.9299 1.11111C20.9299 0.5 20.4299 0 19.8188 0H2.04104C1.42993 0 0.929932 0.5 0.929932 1.11111Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="col">
+                    <a class="heaer__logo" href="">
+                        <img src="assets/images/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="col">
+                    <div class="header__contacts">
+                        <a href="tel:88126037222">8 (812) 603-72-22</a>
+                        <a href="tel:84993807733">8 (499) 380-77-33</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="front">
+        <div class="container">
+            <div class="front__wrap">
+                <h1>
+                    «Пестовский Лесокомбинат»
+                </h1>
+                <div class="front__subtitle">
+                    Cтань частью нашей команды!
+                </div>
+                <button class="button questionnaire__form">
+                    ОТПРАВИТЬ АНКЕТУ
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="about__wrap">
+                <div class="about__title">
+                    <h2>
+                        О компании
+                    </h2>
+                </div>
+                <div class="about__content">
+                    <div class="about__item">
+                        <div class="about__item__number">
+                            2
+                        </div>
+                        <div class="about__item__text">
+                            Города присутствия: <br>
+                            Санкт-Петербург и Москва
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__item__number">
+                            >30
+                        </div>
+                        <div class="about__item__text">
+                            Лет среди лидеров рынка
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__item__number">
+                            100
+                        </div>
+                        <div class="about__item__text">
+                            Домов и бань сдаём ежегодно
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="division">
+        <div class="container">
+            <div class="division__wrap">
+                <div class="division__title">
+                    <h2>
+                        Выбери подразделение:
+                    </h2>
+                </div>
+                <div class="tab">
+                    <div class="tab__header">
+                        <input checked id="tab-btn-1" name="tab-btn" type="radio" value="">
+                        <label for="tab-btn-1">Строительный отдел</label>
+                        <input id="tab-btn-2" name="tab-btn" type="radio" value="">
+                        <label for="tab-btn-2">офис</label>
+                        <input id="tab-btn-3" name="tab-btn" type="radio" value="">
+                        <label for="tab-btn-3">финансовый отдел</label>
+                        <input id="tab-btn-4" name="tab-btn" type="radio" value="">
+                        <label for="tab-btn-4">Отдел продаж</label>
+                        <input id="tab-btn-5" name="tab-btn" type="radio" value="">
+                        <label for="tab-btn-5">внештатный сотрудник</label>
+                    </div>
+                    <div class="tab-content" id="content-1">
+                        <details class="division__item">
+                            <summary class="division__item__header">
+                                <div class="division__item__name">
+                                    <img src="assets/images/division_name.svg" alt="">
+                                    Прораб
+                                </div>
+                                <div class="division__item__price">
+                                    <img src="assets/images/division_price.svg" alt="">
+                                    от 00 000 руб
+                                </div>
+                            </summary>
+                            <div class="division__item__content">
+                                <div class="name">
+                                    Задачи:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Наши ожидания:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Мы предлагаем:﻿
+                                </div>
+                                <ul>
+                                    <li>
+                                        график 5/2 с гибким началом рабочего дня;
+                                    </li>
+                                    <li>
+                                        оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;
+                                    </li>
+                                    <li>
+                                        ежеквартальную премию по итогам работы;
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details class="division__item">
+                            <summary class="division__item__header">
+                                <div class="division__item__name">
+                                    <img src="assets/images/division_name.svg" alt="">
+                                    Специалист службы снабжения
+                                </div>
+                                <div class="division__item__price">
+                                    <img src="assets/images/division_price.svg" alt="">
+                                    от 00 000 руб
+                                </div>
+                            </summary>
+                            <div class="division__item__content">
+                                <div class="name">
+                                    Задачи:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Наши ожидания:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Мы предлагаем:﻿
+                                </div>
+                                <ul>
+                                    <li>
+                                        график 5/2 с гибким началом рабочего дня;
+                                    </li>
+                                    <li>
+                                        оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;
+                                    </li>
+                                    <li>
+                                        ежеквартальную премию по итогам работы;
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details class="division__item">
+                            <summary class="division__item__header">
+                                <div class="division__item__name">
+                                    <img src="assets/images/division_name.svg" alt="">
+                                    Логист
+                                </div>
+                                <div class="division__item__price division__item__price_transform">
+                                    <img src="assets/images/division_price.svg" alt="">
+                                    Обсуждается на собеседовании
+                                </div>
+                            </summary>
+                            <div class="division__item__content">
+                                <div class="name">
+                                    Задачи:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Наши ожидания:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Мы предлагаем:﻿
+                                </div>
+                                <ul>
+                                    <li>
+                                        график 5/2 с гибким началом рабочего дня;
+                                    </li>
+                                    <li>
+                                        оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;
+                                    </li>
+                                    <li>
+                                        ежеквартальную премию по итогам работы;
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details class="division__item">
+                            <summary class="division__item__header">
+                                <div class="division__item__name">
+                                    <img src="assets/images/division_name.svg" alt="">
+                                    Проектировщик
+                                </div>
+                                <div class="division__item__price">
+                                    <img src="assets/images/division_price.svg" alt="">
+                                    от 00 000 руб
+                                </div>
+                            </summary>
+                            <div class="division__item__content">
+                                <div class="name">
+                                    Задачи:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Наши ожидания:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Мы предлагаем:﻿
+                                </div>
+                                <ul>
+                                    <li>
+                                        график 5/2 с гибким началом рабочего дня;
+                                    </li>
+                                    <li>
+                                        оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;
+                                    </li>
+                                    <li>
+                                        ежеквартальную премию по итогам работы;
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="tab-content" id="content-2">
+                        <details class="division__item">
+                            <summary class="division__item__header">
+                                <div class="division__item__name">
+                                    <img src="assets/images/division_name.svg" alt="">
+                                    Прораб
+                                </div>
+                                <div class="division__item__price">
+                                    <img src="assets/images/division_price.svg" alt="">
+                                    от 00 000 руб
+                                </div>
+                            </summary>
+                            <div class="division__item__content">
+                                <div class="name">
+                                    Задачи:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Наши ожидания:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Мы предлагаем:﻿
+                                </div>
+                                <ul>
+                                    <li>
+                                        график 5/2 с гибким началом рабочего дня;
+                                    </li>
+                                    <li>
+                                        оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;
+                                    </li>
+                                    <li>
+                                        ежеквартальную премию по итогам работы;
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details class="division__item">
+                            <summary class="division__item__header">
+                                <div class="division__item__name">
+                                    <img src="assets/images/division_name.svg" alt="">
+                                    Специалист службы снабжения
+                                </div>
+                                <div class="division__item__price">
+                                    <img src="assets/images/division_price.svg" alt="">
+                                    от 00 000 руб
+                                </div>
+                            </summary>
+                            <div class="division__item__content">
+                                <div class="name">
+                                    Задачи:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Наши ожидания:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Мы предлагаем:﻿
+                                </div>
+                                <ul>
+                                    <li>
+                                        график 5/2 с гибким началом рабочего дня;
+                                    </li>
+                                    <li>
+                                        оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;
+                                    </li>
+                                    <li>
+                                        ежеквартальную премию по итогам работы;
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details class="division__item">
+                            <summary class="division__item__header">
+                                <div class="division__item__name">
+                                    <img src="assets/images/division_name.svg" alt="">
+                                    Логист
+                                </div>
+                                <div class="division__item__price division__item__price_transform">
+                                    <img src="assets/images/division_price.svg" alt="">
+                                    Обсуждается на собеседовании
+                                </div>
+                            </summary>
+                            <div class="division__item__content">
+                                <div class="name">
+                                    Задачи:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Наши ожидания:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Мы предлагаем:﻿
+                                </div>
+                                <ul>
+                                    <li>
+                                        график 5/2 с гибким началом рабочего дня;
+                                    </li>
+                                    <li>
+                                        оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;
+                                    </li>
+                                    <li>
+                                        ежеквартальную премию по итогам работы;
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details class="division__item">
+                            <summary class="division__item__header">
+                                <div class="division__item__name">
+                                    <img src="assets/images/division_name.svg" alt="">
+                                    Проектировщик
+                                </div>
+                                <div class="division__item__price">
+                                    <img src="assets/images/division_price.svg" alt="">
+                                    от 00 000 руб
+                                </div>
+                            </summary>
+                            <div class="division__item__content">
+                                <div class="name">
+                                    Задачи:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Наши ожидания:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Мы предлагаем:﻿
+                                </div>
+                                <ul>
+                                    <li>
+                                        график 5/2 с гибким началом рабочего дня;
+                                    </li>
+                                    <li>
+                                        оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;
+                                    </li>
+                                    <li>
+                                        ежеквартальную премию по итогам работы;
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="tab-content" id="content-3">
+                        <details class="division__item">
+                            <summary class="division__item__header">
+                                <div class="division__item__name">
+                                    <img src="assets/images/division_name.svg" alt="">
+                                    Прораб
+                                </div>
+                                <div class="division__item__price">
+                                    <img src="assets/images/division_price.svg" alt="">
+                                    от 00 000 руб
+                                </div>
+                            </summary>
+                            <div class="division__item__content">
+                                <div class="name">
+                                    Задачи:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Наши ожидания:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Мы предлагаем:﻿
+                                </div>
+                                <ul>
+                                    <li>
+                                        график 5/2 с гибким началом рабочего дня;
+                                    </li>
+                                    <li>
+                                        оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;
+                                    </li>
+                                    <li>
+                                        ежеквартальную премию по итогам работы;
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details class="division__item">
+                            <summary class="division__item__header">
+                                <div class="division__item__name">
+                                    <img src="assets/images/division_name.svg" alt="">
+                                    Специалист службы снабжения
+                                </div>
+                                <div class="division__item__price">
+                                    <img src="assets/images/division_price.svg" alt="">
+                                    от 00 000 руб
+                                </div>
+                            </summary>
+                            <div class="division__item__content">
+                                <div class="name">
+                                    Задачи:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Наши ожидания:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Мы предлагаем:﻿
+                                </div>
+                                <ul>
+                                    <li>
+                                        график 5/2 с гибким началом рабочего дня;
+                                    </li>
+                                    <li>
+                                        оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;
+                                    </li>
+                                    <li>
+                                        ежеквартальную премию по итогам работы;
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details class="division__item">
+                            <summary class="division__item__header">
+                                <div class="division__item__name">
+                                    <img src="assets/images/division_name.svg" alt="">
+                                    Логист
+                                </div>
+                                <div class="division__item__price division__item__price_transform">
+                                    <img src="assets/images/division_price.svg" alt="">
+                                    Обсуждается на собеседовании
+                                </div>
+                            </summary>
+                            <div class="division__item__content">
+                                <div class="name">
+                                    Задачи:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Наши ожидания:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Мы предлагаем:﻿
+                                </div>
+                                <ul>
+                                    <li>
+                                        график 5/2 с гибким началом рабочего дня;
+                                    </li>
+                                    <li>
+                                        оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;
+                                    </li>
+                                    <li>
+                                        ежеквартальную премию по итогам работы;
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details class="division__item">
+                            <summary class="division__item__header">
+                                <div class="division__item__name">
+                                    <img src="assets/images/division_name.svg" alt="">
+                                    Проектировщик
+                                </div>
+                                <div class="division__item__price">
+                                    <img src="assets/images/division_price.svg" alt="">
+                                    от 00 000 руб
+                                </div>
+                            </summary>
+                            <div class="division__item__content">
+                                <div class="name">
+                                    Задачи:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Наши ожидания:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Мы предлагаем:﻿
+                                </div>
+                                <ul>
+                                    <li>
+                                        график 5/2 с гибким началом рабочего дня;
+                                    </li>
+                                    <li>
+                                        оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;
+                                    </li>
+                                    <li>
+                                        ежеквартальную премию по итогам работы;
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="tab-content" id="content-4">
+                        <details class="division__item">
+                            <summary class="division__item__header">
+                                <div class="division__item__name">
+                                    <img src="assets/images/division_name.svg" alt="">
+                                    Прораб
+                                </div>
+                                <div class="division__item__price">
+                                    <img src="assets/images/division_price.svg" alt="">
+                                    от 00 000 руб
+                                </div>
+                            </summary>
+                            <div class="division__item__content">
+                                <div class="name">
+                                    Задачи:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Наши ожидания:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Мы предлагаем:﻿
+                                </div>
+                                <ul>
+                                    <li>
+                                        график 5/2 с гибким началом рабочего дня;
+                                    </li>
+                                    <li>
+                                        оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;
+                                    </li>
+                                    <li>
+                                        ежеквартальную премию по итогам работы;
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details class="division__item">
+                            <summary class="division__item__header">
+                                <div class="division__item__name">
+                                    <img src="assets/images/division_name.svg" alt="">
+                                    Специалист службы снабжения
+                                </div>
+                                <div class="division__item__price">
+                                    <img src="assets/images/division_price.svg" alt="">
+                                    от 00 000 руб
+                                </div>
+                            </summary>
+                            <div class="division__item__content">
+                                <div class="name">
+                                    Задачи:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Наши ожидания:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Мы предлагаем:﻿
+                                </div>
+                                <ul>
+                                    <li>
+                                        график 5/2 с гибким началом рабочего дня;
+                                    </li>
+                                    <li>
+                                        оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;
+                                    </li>
+                                    <li>
+                                        ежеквартальную премию по итогам работы;
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details class="division__item">
+                            <summary class="division__item__header">
+                                <div class="division__item__name">
+                                    <img src="assets/images/division_name.svg" alt="">
+                                    Логист
+                                </div>
+                                <div class="division__item__price division__item__price_transform">
+                                    <img src="assets/images/division_price.svg" alt="">
+                                    Обсуждается на собеседовании
+                                </div>
+                            </summary>
+                            <div class="division__item__content">
+                                <div class="name">
+                                    Задачи:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Наши ожидания:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Мы предлагаем:﻿
+                                </div>
+                                <ul>
+                                    <li>
+                                        график 5/2 с гибким началом рабочего дня;
+                                    </li>
+                                    <li>
+                                        оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;
+                                    </li>
+                                    <li>
+                                        ежеквартальную премию по итогам работы;
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details class="division__item">
+                            <summary class="division__item__header">
+                                <div class="division__item__name">
+                                    <img src="assets/images/division_name.svg" alt="">
+                                    Проектировщик
+                                </div>
+                                <div class="division__item__price">
+                                    <img src="assets/images/division_price.svg" alt="">
+                                    от 00 000 руб
+                                </div>
+                            </summary>
+                            <div class="division__item__content">
+                                <div class="name">
+                                    Задачи:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Наши ожидания:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Мы предлагаем:﻿
+                                </div>
+                                <ul>
+                                    <li>
+                                        график 5/2 с гибким началом рабочего дня;
+                                    </li>
+                                    <li>
+                                        оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;
+                                    </li>
+                                    <li>
+                                        ежеквартальную премию по итогам работы;
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="tab-content" id="content-5">
+                        <details class="division__item">
+                            <summary class="division__item__header">
+                                <div class="division__item__name">
+                                    <img src="assets/images/division_name.svg" alt="">
+                                    Прораб
+                                </div>
+                                <div class="division__item__price">
+                                    <img src="assets/images/division_price.svg" alt="">
+                                    от 00 000 руб
+                                </div>
+                            </summary>
+                            <div class="division__item__content">
+                                <div class="name">
+                                    Задачи:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Наши ожидания:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Мы предлагаем:﻿
+                                </div>
+                                <ul>
+                                    <li>
+                                        график 5/2 с гибким началом рабочего дня;
+                                    </li>
+                                    <li>
+                                        оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;
+                                    </li>
+                                    <li>
+                                        ежеквартальную премию по итогам работы;
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details class="division__item">
+                            <summary class="division__item__header">
+                                <div class="division__item__name">
+                                    <img src="assets/images/division_name.svg" alt="">
+                                    Специалист службы снабжения
+                                </div>
+                                <div class="division__item__price">
+                                    <img src="assets/images/division_price.svg" alt="">
+                                    от 00 000 руб
+                                </div>
+                            </summary>
+                            <div class="division__item__content">
+                                <div class="name">
+                                    Задачи:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Наши ожидания:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Мы предлагаем:﻿
+                                </div>
+                                <ul>
+                                    <li>
+                                        график 5/2 с гибким началом рабочего дня;
+                                    </li>
+                                    <li>
+                                        оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;
+                                    </li>
+                                    <li>
+                                        ежеквартальную премию по итогам работы;
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details class="division__item">
+                            <summary class="division__item__header">
+                                <div class="division__item__name">
+                                    <img src="assets/images/division_name.svg" alt="">
+                                    Логист
+                                </div>
+                                <div class="division__item__price division__item__price_transform">
+                                    <img src="assets/images/division_price.svg" alt="">
+                                    Обсуждается на собеседовании
+                                </div>
+                            </summary>
+                            <div class="division__item__content">
+                                <div class="name">
+                                    Задачи:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Наши ожидания:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Мы предлагаем:﻿
+                                </div>
+                                <ul>
+                                    <li>
+                                        график 5/2 с гибким началом рабочего дня;
+                                    </li>
+                                    <li>
+                                        оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;
+                                    </li>
+                                    <li>
+                                        ежеквартальную премию по итогам работы;
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details class="division__item">
+                            <summary class="division__item__header">
+                                <div class="division__item__name">
+                                    <img src="assets/images/division_name.svg" alt="">
+                                    Проектировщик
+                                </div>
+                                <div class="division__item__price">
+                                    <img src="assets/images/division_price.svg" alt="">
+                                    от 00 000 руб
+                                </div>
+                            </summary>
+                            <div class="division__item__content">
+                                <div class="name">
+                                    Задачи:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Наши ожидания:
+                                </div>
+                                <ul>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                    <li>
+                                        описание
+                                    </li>
+                                </ul>
+                                <div class="name">
+                                    Мы предлагаем:﻿
+                                </div>
+                                <ul>
+                                    <li>
+                                        график 5/2 с гибким началом рабочего дня;
+                                    </li>
+                                    <li>
+                                        оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;
+                                    </li>
+                                    <li>
+                                        ежеквартальную премию по итогам работы;
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <button class="button division__button questionnaire__form">
+                    откликнуться на вакансию
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages__wrap">
+                <div class="advantages__title">
+                    <h2>
+                        Преимущества Компании
+                    </h2>
+                </div>
+
+            </div>
+        </div>
+        <details>
+            <summary>Качество продукта</summary>
+            Мы гордимся результатами своей работы! Мы убеждены, что именно качество — это самое главное, это то,
+            что даёт Нам уверенность в завтрашнем дне.
+        </details>
+        <details>
+            <summary>Популярность бренда в сети</summary>
+            Мы занимаем высокие позиции в поисковой выдаче и имеем многочисленные отзывы, привлекающие новых заказчиков
+            независимо от времени года.
+        </details>
+        <details>
+            <summary>Передовое рабочее место</summary>
+            Комфортный офис в центре г. Санкт-Петербург, оборудованный передовыми технологиями. Твой рабочий компьютер
+            может быть даже в твоём смартфоне!
+        </details>
+        <details>
+            <summary>Свои автоматизированные системы обучения</summary>
+            Создали и постоянно улучшаем собственные автоматизированные системы обучения специалистов и повышения
+            их квалификации внутри компании.
+        </details>
+        <details>
+            <summary>Сотрудничество с ведущими Компаниями рынка</summary>
+            Сотрудничаем с ведущими Компаниями рынка строительных материалов: «Grand Line», «Петрович», «Окна
+            Петербурга», «КраскиДоски», «Technonicol» и другими.
+        </details>
+    </section>
+    <section class="products">
+        <div class="container">
+            <div class="products__wrap">
+                <div class="products__title">
+                    <h2>
+                        продукты компании
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="products__content">
+            <div class="tab">
+                <div class="tab__header">
+                    <input checked id="tab-btn-8" name="tab-btn-group3" type="radio" value="">
+                    <label for="tab-btn-8">БАНИ</label>
+                    <input id="tab-btn-9" name="tab-btn-group3" type="radio" value="">
+                    <label for="tab-btn-9">ДОМА</label>
+                </div>
+                <div class="tab-content" id="content-8">
+                    <div class="products__tab__content">
+                        <div class="swiper1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slider__container">
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__container">
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__container">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination1"></div>
+                        <div class="products-button-prev1">
+                            <svg width="18" height="30" viewBox="0 0 18 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.52663 15.0154L16.6369 26.25C17.0547 26.6678 17.2438 27.124 17.2636 27.75C17.2833 28.376 17.0942 28.9159 16.6369 29.3733C16.219 29.7911 15.6873 30 15.0415 30C14.3958 30 13.8641 29.7911 13.4462 29.3733L0.683706 16.6107C0.227902 16.1549 0 15.6232 0 15.0154C0 14.4077 0.227902 13.8759 0.683706 13.4201L13.4462 0.657585C13.8641 0.239765 14.3867 0.0209789 15.0142 0.00122643C15.6417 -0.0185242 16.1826 0.200262 16.6369 0.657585C17.0547 1.07541 17.2636 1.60718 17.2636 2.2529C17.2636 2.89862 17.0547 3.4304 16.6369 3.84822L5.52663 15.0154Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div class="products-button-next1">
+                            <svg width="18" height="30" viewBox="0 0 18 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.0033 15.0154L0.893105 26.25C0.475283 26.6678 0.286123 27.124 0.266371 27.75C0.24662 28.376 0.43578 28.9159 0.893105 29.3733C1.31092 29.7911 1.8427 30 2.48842 30C3.13414 30 3.66591 29.7911 4.08374 29.3733L16.8463 16.6107C17.3021 16.1549 17.53 15.6232 17.53 15.0154C17.53 14.4077 17.3021 13.8759 16.8463 13.4201L4.08374 0.657585C3.66591 0.239765 3.14326 0.0209789 2.51577 0.00122643C1.88828 -0.0185242 1.34739 0.200262 0.893105 0.657585C0.475283 1.07541 0.266371 1.60718 0.266371 2.2529C0.266371 2.89862 0.475283 3.4304 0.893105 3.84822L12.0033 15.0154Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <script>
+                            const swiper2 = new Swiper('.products .swiper1', {
+                                slidesPerView: 'auto',
+                                slidesPerGroup: 1,
+                                spaceBetween: 20,
+                                loop: true,
+                                centeredSlides: true,
+                                pagination: {
+                                    el: ".swiper-pagination1",
+                                    clickable: true,
+                                },
+                                navigation: {
+                                    nextEl: '.products-button-next1',
+                                    prevEl: '.products-button-prev1',
+                                },
+                            });
+                        </script>
+                    </div>
+
+                </div>
+                <div class="tab-content" id="content-9">
+                    <div class="products__tab__content">
+                        <div class="swiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slider__container">
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__container">
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__container">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination2"></div>
+                        <div class="products-button-prev2">
+                            <svg width="18" height="30" viewBox="0 0 18 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.52663 15.0154L16.6369 26.25C17.0547 26.6678 17.2438 27.124 17.2636 27.75C17.2833 28.376 17.0942 28.9159 16.6369 29.3733C16.219 29.7911 15.6873 30 15.0415 30C14.3958 30 13.8641 29.7911 13.4462 29.3733L0.683706 16.6107C0.227902 16.1549 0 15.6232 0 15.0154C0 14.4077 0.227902 13.8759 0.683706 13.4201L13.4462 0.657585C13.8641 0.239765 14.3867 0.0209789 15.0142 0.00122643C15.6417 -0.0185242 16.1826 0.200262 16.6369 0.657585C17.0547 1.07541 17.2636 1.60718 17.2636 2.2529C17.2636 2.89862 17.0547 3.4304 16.6369 3.84822L5.52663 15.0154Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div class="products-button-next2">
+                            <svg width="18" height="30" viewBox="0 0 18 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.0033 15.0154L0.893105 26.25C0.475283 26.6678 0.286123 27.124 0.266371 27.75C0.24662 28.376 0.43578 28.9159 0.893105 29.3733C1.31092 29.7911 1.8427 30 2.48842 30C3.13414 30 3.66591 29.7911 4.08374 29.3733L16.8463 16.6107C17.3021 16.1549 17.53 15.6232 17.53 15.0154C17.53 14.4077 17.3021 13.8759 16.8463 13.4201L4.08374 0.657585C3.66591 0.239765 3.14326 0.0209789 2.51577 0.00122643C1.88828 -0.0185242 1.34739 0.200262 0.893105 0.657585C0.475283 1.07541 0.266371 1.60718 0.266371 2.2529C0.266371 2.89862 0.475283 3.4304 0.893105 3.84822L12.0033 15.0154Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <script>
+                            const swiper3 = new Swiper('.products .swiper2', {
+                                slidesPerView: 'auto',
+                                slidesPerGroup: 1,
+                                spaceBetween: 20,
+                                loop: true,
+                                centeredSlides: true,
+                                pagination: {
+                                    el: ".swiper-pagination2",
+                                    clickable: true,
+                                },
+                                navigation: {
+                                    nextEl: '.products-button-next2',
+                                    prevEl: '.products-button-prev2',
+                                },
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="career">
+        <div class="container">
+            <div class="career__wrap">
+                <div class="career__title">
+                    <h2>
+                        Карьерный рост
+                    </h2>
+                </div>
+                <div class="career__content">
+                    <div class="career__text">
+                        <p>
+                            Наша Компания является ярким примером, где достойные люди смело и заслуженно поднимаются
+                            по карьерной лестнице.
+                        </p>
+                        <p>
+                            Мы ценим стремление к развитию и предоставляем все необходимые для этого условия.
+                        </p>
+                    </div>
+                    <div class="career__slider">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slider__container">
+                                        <div class="career__user">
+                                            <img src="assets/images/profile.webp" alt="">
+                                        </div>
+                                        <div class="career__name">
+                                            Олег Воробьёв
+                                        </div>
+                                        <div class="career__specialization">
+                                            Прораб
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                В Компании с 2018 года. Начал с позиции плотника в строительной бригаде.
+                                            </li>
+                                            <li>
+                                                В течение года работы Олег стал бригадиром и был приглашён в офис
+                                                Компании на должность штатного Производителя строительных работ.
+                                            </li>
+                                            <li>
+                                                На данный момент в Его подчинении находятся 9 строительных бригад. Олег
+                                                вносит весомый вклад в итоговый результат Компании, а это реализация
+                                                100 объектов в год!
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__container">
+                                        <div class="career__user">
+                                            <img src="assets/images/profile2.webp" alt="">
+                                        </div>
+                                        <div class="career__name">
+                                            Мария Обухова
+                                        </div>
+                                        <div class="career__specialization">
+                                            Руководитель финансовой службы
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                В декабре 2018 года заступил на должность Менеджера отдела продаж.
+                                            </li>
+                                            <li>
+                                                После 9 месяцев стабильных результатов, зарекомендовав себя как надёжный
+                                                сотрудник, получил ответственную должность Логиста.
+                                            </li>
+                                            <li>
+                                                Через год Даниил занял должность Специалиста службы снабжения, взяв
+                                                на себя помимо закупа материала ещё и крайне важную роль Сметчика.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider__container">
+                                        <div class="career__user">
+                                            <img src="assets/images/profile3.webp" alt="">
+                                        </div>
+                                        <div class="career__name">
+                                            Даниил Басенков
+                                        </div>
+                                        <div class="career__specialization">
+                                            Менеджер по снабжению
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                В декабре 2018 года заступил на должность Менеджера отдела продаж.
+                                            </li>
+                                            <li>
+                                                После 9 месяцев стабильных результатов, зарекомендовав себя как надёжный
+                                                сотрудник, получил ответственную должность Логиста.
+                                            </li>
+                                            <li>
+                                                Через год Даниил занял должность Специалиста службы снабжения, взяв
+                                                на себя помимо закупа материала ещё и крайне важную роль Сметчика.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="career-button-prev">
+                            <svg width="18" height="30" viewBox="0 0 18 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.52663 15.0154L16.6369 26.25C17.0547 26.6678 17.2438 27.124 17.2636 27.75C17.2833 28.376 17.0942 28.9159 16.6369 29.3733C16.219 29.7911 15.6873 30 15.0415 30C14.3958 30 13.8641 29.7911 13.4462 29.3733L0.683706 16.6107C0.227902 16.1549 0 15.6232 0 15.0154C0 14.4077 0.227902 13.8759 0.683706 13.4201L13.4462 0.657585C13.8641 0.239765 14.3867 0.0209789 15.0142 0.00122643C15.6417 -0.0185242 16.1826 0.200262 16.6369 0.657585C17.0547 1.07541 17.2636 1.60718 17.2636 2.2529C17.2636 2.89862 17.0547 3.4304 16.6369 3.84822L5.52663 15.0154Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div class="career-button-next">
+                            <svg width="18" height="30" viewBox="0 0 18 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.0033 15.0154L0.893105 26.25C0.475283 26.6678 0.286123 27.124 0.266371 27.75C0.24662 28.376 0.43578 28.9159 0.893105 29.3733C1.31092 29.7911 1.8427 30 2.48842 30C3.13414 30 3.66591 29.7911 4.08374 29.3733L16.8463 16.6107C17.3021 16.1549 17.53 15.6232 17.53 15.0154C17.53 14.4077 17.3021 13.8759 16.8463 13.4201L4.08374 0.657585C3.66591 0.239765 3.14326 0.0209789 2.51577 0.00122643C1.88828 -0.0185242 1.34739 0.200262 0.893105 0.657585C0.475283 1.07541 0.266371 1.60718 0.266371 2.2529C0.266371 2.89862 0.475283 3.4304 0.893105 3.84822L12.0033 15.0154Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <script>
+                            const swiper = new Swiper('.career .swiper', {
+                                slidesPerView: 'auto',
+                                slidesPerGroup: 1,
+                                spaceBetween: 0,
+                                loop: true,
+
+                                navigation: {
+                                    nextEl: '.career-button-next',
+                                    prevEl: '.career-button-prev',
+                                },
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="success">
+        <div class="container">
+            <div class="success__wrap">
+                <div class="success__text">
+                    Наши успехи — это заслуга замечательных людей, работающих в нашей Команде. <br><br>
+                    У Нас всегда есть вакансии для сильных кандидатов
+                </div>
+                <div class="success__content">
+                    <div class="success__content__text">
+                        Если чувствуешь в Себе потенциал и здоровые амбиции — ждём рядом с Нами!
+                    </div>
+                    <button class="button success__button questionnaire__form">
+                        Присоединиться к команде
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <div class="contact__wrap">
+                <div class="contact__title">
+                    <h2>КОНТАКТЫ</h2>
+                </div>
+            </div>
+        </div>
+        <div class="contact__content">
+            <div class="tab">
+                <div class="tab__header">
+                    <input checked id="tab-btn-6" name="tab-btn-group2" type="radio" value="">
+                    <label for="tab-btn-6">САНКТ-ПЕТЕРБУРГ</label>
+                    <input id="tab-btn-7" name="tab-btn-group2" type="radio" value="">
+                    <label for="tab-btn-7">МОСКВА</label>
+                </div>
+                <div class="tab-content" id="content-6">
+                    <div class="contact__tab__content">
+                        <a class="contact__tab__link" href="tel:88126027760">
+                            <img src="assets/images/phone.svg" alt="">
+                            8 (812) 602-77-60
+                        </a>
+                        <a class="contact__tab__link" href="mailto:info@pplk.ru">
+                            <img src="assets/images/email.svg" alt="">
+                            info@pplk.ru
+                        </a>
+                        <a class="contact__tab__link" href="tel:88126027760">
+                            <img src="assets/images/address.svg" alt="">
+                            ул. Заозёрная, д. 8 к. 2, офис 202<br>(7 мин. пешком от метро Фрунзенская)
+                        </a>
+                        <ul class="contact__tab__socies">
+                            <li>
+                                <a href="">
+                                    <img src="assets/images/ytube.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="assets/images/vk.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="assets/images/tg.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <img class="contact__tab__map" src="assets/images/map.webp" alt="">
+                </div>
+                <div class="tab-content" id="content-7">
+                    <div class="contact__tab__content">
+                        <a class="contact__tab__link" href="tel:88126027760">
+                            <img src="assets/images/phone.svg" alt="">
+                            8 (812) 602-77-60
+                        </a>
+                        <a class="contact__tab__link" href="mailto:info@pplk.ru">
+                            <img src="assets/images/email.svg" alt="">
+                            info@pplk.ru
+                        </a>
+                        <a class="contact__tab__link" href="tel:88126027760">
+                            <img src="assets/images/address.svg" alt="">
+                            ул. Заозёрная, д. 8 к. 2, офис 202<br>(7 мин. пешком от метро Фрунзенская)
+                        </a>
+                        <ul class="contact__tab__socies">
+                            <li>
+                                <a href="">
+                                    <img src="assets/images/ytube.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="assets/images/vk.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="assets/images/tg.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <img class="contact__tab__map" src="assets/images/map.webp" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__text">
+                    © 2023 Пестовский Лесокомбинат. <br>Все права защищены.
+                </div>
+                <a class="footer__link" href="">
+                    Реквизиты
+                </a>
+                <a class="footer__link footer__link_size" href="">
+                    Политика конфиденциальности
+                </a>
+                <a class="footer__logo" href="">
+                    <img src="assets/images/footer_logo.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div class="questionnaire" id="myModal">
+        <div class="questionnaire__container">
+            <div class="questionnaire__header">
+                <button class="close">
+                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="13.1187" y1="31.7865" x2="31.7864" y2="13.1189" stroke="white" stroke-width="4" />
+                        <line x1="31.7863" y1="30.8813" x2="13.1187" y2="12.2136" stroke="white" stroke-width="4" />
+                    </svg>
+                </button>
+            </div>
+            <div class="questionnaire__wrap questionnaire__form" >
+                <div class="questionnaire__title">
+                    <h2>
+                        заполните анкету
+                    </h2>
+                </div>
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Ф.И.О" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="job">Отклик на вакансию</label>
+                        <div class="dropdown">
+                            <button type="button" class="dropdown-button">Выберите вакансию</button>
+                            <div class="dropdown-content">
+                                <div class="dropdown-item" data-value="developer">Вакансия 1</div>
+                                <div class="dropdown-item" data-value="designer">Вакансия 2</div>
+                                <div class="dropdown-item" data-value="manager">Вакансия 3</div>
+                                <div class="dropdown-item" data-value="analyst">Вакансия 4</div>
+                            </div>
+                            <input type="hidden" name="job" id="selected-job">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="resume">Ваше резюме</label>
+                        <div class="form-group__text">
+                            Есть резюме в формате .pdf или .doc? <br><br>
+                            Приложите и отправьте его нам.
+                        </div>
+                        <button type="button" class="upload-button"
+                            onclick="document.getElementById('resume').click()">Загрузить файл</button>
+                        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" style="display: none;"
+                            required>
+                        <span id="file-name"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group__check">
+                            <input type="checkbox" id="agree" name="agree" required>
+                            <div class="check__text">
+                                Я прочитал(а), ознакомился(лась) и согласен(на) с Политикой конфиденциальности,
+                                Согласием на обработку персональных данных физическим лицом. Я осознаю, что даю Согласие
+                                на обработку персональных данных для использования предоставляемых возможностей <br><br>
+                                Веб-сервиса. Я достиг(ла) 18-летнего возраста.
+                            </div>
+                        </label>
+                    </div>
+                    <button type="submit" class="button">
+                        ОТПРАВИТЬ АНКЕТУ
+                    </button>
+                </form>
+            </div>
+            <div class="questionnaire__wrap success-message" style="display: none;">
+                <div class="questionnaire__title">
+                    <h2>
+                        заполните анкету
+                    </h2>
+                </div>
+                <div class="success_message__content">
+                    <img src="assets/images/yes.webp" alt="">
+                    <div class="success_message__text">
+                        <p>
+                            Благодарим за ваш отклик и интерес.
+                        </p>
+                        <p>
+                            Мы изучим вашу анкету и свяжемся с вами в течении 2х дней.
+                        </p>
+                    </div>
+                    <button class="button">
+                        на главную
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
